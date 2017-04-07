@@ -1,0 +1,20 @@
+[
+  {
+    "bug_id": "1",
+    "bug_date_reported": "01-01-2017",
+    "bug_date_closed": "01-01-2017",
+    "bug_description": "descriptionbug",
+    "bug_reporter": "jonh",
+    "problem_log": [{
+      "log_date": "01-01-2017",
+      "log_description": "description",
+      "log_work": "worklog"
+    }],
+    "developers": {
+      "developer_name": "jane",
+      "details": "test"
+    },
+    "module": "module_id",
+    "module_name": "customersmanagement"
+  }
+]
