@@ -1,0 +1,46 @@
+= Cheatsheets
+
+[[Bug]]
+== Bug
+
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[bugDateClosed]]`bugDateClosed`|`String`|-
+|[[bugDateReported]]`bugDateReported`|`String`|-
+|[[bugDescription]]`bugDescription`|`String`|-
+|[[bugDeveloper]]`bugDeveloper`|`link:dataobjects.html#BugDeveloper[BugDeveloper]`|-
+|[[bugId]]`bugId`|`String`|-
+|[[bugReporter]]`bugReporter`|`String`|-
+|[[module]]`module`|`String`|-
+|[[moduleName]]`moduleName`|`String`|-
+|[[problemLogs]]`problemLogs`|`Array of link:dataobjects.html#BugProblemLog[BugProblemLog]`|-
+|===
+
+[[BugDeveloper]]
+== BugDeveloper
+
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[details]]`details`|`String`|-
+|[[developerName]]`developerName`|`String`|-
+|===
+
+[[BugProblemLog]]
+== BugProblemLog
+
+
+[cols=">25%,^25%,50%"]
+[frame="topbot"]
+|===
+^|Name | Type ^| Description
+|[[logDate]]`logDate`|`String`|-
+|[[logDescription]]`logDescription`|`String`|-
+|[[logWork]]`logWork`|`String`|-
+|===
+

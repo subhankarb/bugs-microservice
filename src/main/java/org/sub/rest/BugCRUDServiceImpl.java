@@ -16,7 +16,10 @@ public class BugCRUDServiceImpl implements BugCRUDService {
     private final MongoClient client;
 
     public BugCRUDServiceImpl(Vertx vertx, JsonObject config) {
-        this.client = MongoClient.createNonShared(vertx, config);
+        this.client = MongoClient.createNonShared(vertx,
+                config.getJsonObject("mongo",
+                        new JsonObject().put("host", "127.0.0.1")
+                                .put("port", 27017)));
     }
 
 
@@ -42,9 +45,7 @@ public class BugCRUDServiceImpl implements BugCRUDService {
                 if (ar.result() == null) {
                     resultHandler.handle(Future.succeededFuture());
                 } else {
-                    Bug bug = new Bug();
-                    Bug.fromJson(ar.result(), bug);
-                    resultHandler.handle(Future.succeededFuture(bug));
+                    resultHandler.handle(Future.succeededFuture(new Bug(ar.result())));
                 }
             } else {
                 resultHandler.handle(Future.failedFuture(ar.cause()));

@@ -39,8 +39,8 @@ public class BugServiceAPIVerticle extends RestAPIVerticle {
         enableHeartbeatCheck(router, config());
 
         // get HTTP host and port from configuration, or use default value
-        String host = config().getString("store.http.address", "0.0.0.0");
-        int port = config().getInteger("store.http.port", 8085);
+        String host = config().getString("http.address", "0.0.0.0");
+        int port = config().getInteger("http.port", 8080);
 
         createHttpServer(router, host, port)
                 .compose(serverCreated -> publishHttpEndpoint(SERVICE_NAME, host, port))

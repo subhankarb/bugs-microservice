@@ -9,6 +9,11 @@ public class BugDeveloper {
     private String developerName;
     private String details;
 
+    public BugDeveloper(){}
+    public BugDeveloper(JsonObject json){
+        BugDeveloper.fromJson(json, this);
+    }
+
     public String getDeveloperName() {
         return developerName;
     }
@@ -23,6 +28,12 @@ public class BugDeveloper {
 
     public void setDetails(String details) {
         this.details = details;
+    }
+
+    public JsonObject toJson() {
+        JsonObject json = new JsonObject();
+        BugDeveloper.toJson(this, json);
+        return json;
     }
 
     @Override

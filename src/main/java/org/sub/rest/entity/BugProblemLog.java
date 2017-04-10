@@ -9,6 +9,11 @@ public class BugProblemLog {
     private String logDescription;
     private String logWork;
 
+    public BugProblemLog(){}
+    public BugProblemLog(JsonObject json){
+        BugProblemLog.fromJson(json, this);
+    }
+
     public String getLogDate() {
         return logDate;
     }
@@ -31,6 +36,12 @@ public class BugProblemLog {
 
     public void setLogWork(String logWork) {
         this.logWork = logWork;
+    }
+
+    public JsonObject toJson() {
+        JsonObject json = new JsonObject();
+        BugProblemLog.toJson(this, json);
+        return json;
     }
 
     @Override

@@ -20,6 +20,11 @@ public class Bug {
     private String module;
     private String moduleName;
 
+    public Bug(){}
+    public Bug(JsonObject json){
+        Bug.fromJson(json, this);
+    }
+
     public String getBugId() {
         return bugId;
     }
@@ -90,6 +95,12 @@ public class Bug {
 
     public void setModuleName(String moduleName) {
         this.moduleName = moduleName;
+    }
+
+    public JsonObject toJson() {
+        JsonObject json = new JsonObject();
+        Bug.toJson(this, json);
+        return json;
     }
 
     @Override
