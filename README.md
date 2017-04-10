@@ -6,7 +6,7 @@ Update the configuration in application-conf.json file
 ```bash
 $ cd vertxmongo
 $ mvn clean package
-$ java -jar target/my-first-app-1.0-SNAPSHOT-fat.jar -conf src/main/resources/application-conf.json
+$ java -jar target/bugs-microservice-1.0-SNAPSHOT-fat.jar -conf src/main/resources/application-conf.json 
 ```
 
 ## APIs
