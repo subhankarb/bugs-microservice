@@ -1,4 +1,4 @@
-package org.sub.rest.entity;
+package org.sub.bug.entity;
 
 import io.vertx.codegen.annotations.DataObject;
 import io.vertx.core.json.JsonArray;

@@ -14,9 +14,9 @@
 * under the License.
 */
 
-package org.sub.rest;
+package org.sub.bug;
 
-import org.sub.rest.BugCRUDService;
+import org.sub.bug.BugCRUDService;
 import io.vertx.core.eventbus.DeliveryOptions;
 import io.vertx.core.Vertx;
 import io.vertx.core.Future;
@@ -32,8 +32,8 @@ import java.util.function.Function;
 import io.vertx.serviceproxy.ProxyHelper;
 import io.vertx.serviceproxy.ServiceException;
 import io.vertx.serviceproxy.ServiceExceptionMessageCodec;
-import org.sub.rest.entity.Bug;
 import io.vertx.core.AsyncResult;
+import org.sub.bug.entity.Bug;
 import io.vertx.core.Handler;
 
 /*

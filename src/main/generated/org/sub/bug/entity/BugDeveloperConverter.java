@@ -14,15 +14,15 @@
  * under the License.
  */
 
-package org.sub.rest.entity;
+package org.sub.bug.entity;
 
 import io.vertx.core.json.JsonObject;
 import io.vertx.core.json.JsonArray;
 
 /**
- * Converter for {@link org.sub.rest.entity.BugDeveloper}.
+ * Converter for {@link org.sub.bug.entity.BugDeveloper}.
  *
- * NOTE: This class has been automatically generated from the {@link org.sub.rest.entity.BugDeveloper} original class using Vert.x codegen.
+ * NOTE: This class has been automatically generated from the {@link org.sub.bug.entity.BugDeveloper} original class using Vert.x codegen.
  */
 public class BugDeveloperConverter {
 

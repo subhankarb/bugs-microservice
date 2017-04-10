@@ -1,10 +1,10 @@
-package org.sub.rest;
+package org.sub.bug;
 
 import io.vertx.codegen.annotations.ProxyGen;
 import io.vertx.codegen.annotations.VertxGen;
 import io.vertx.core.AsyncResult;
 import io.vertx.core.Handler;
-import org.sub.rest.entity.Bug;
+import org.sub.bug.entity.Bug;
 
 @VertxGen
 @ProxyGen

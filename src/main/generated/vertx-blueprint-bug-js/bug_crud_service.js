@@ -19,8 +19,8 @@ var utils = require('vertx-js/util/utils');
 
 var io = Packages.io;
 var JsonObject = io.vertx.core.json.JsonObject;
-var JBugCRUDService = Java.type('org.sub.rest.BugCRUDService');
-var Bug = Java.type('org.sub.rest.entity.Bug');
+var JBugCRUDService = Java.type('org.sub.bug.BugCRUDService');
+var Bug = Java.type('org.sub.bug.entity.Bug');
 
 /**
  @class
@@ -39,7 +39,7 @@ var BugCRUDService = function(j_val) {
   this.saveBug = function(bug, resultHandler) {
     var __args = arguments;
     if (__args.length === 2 && (typeof __args[0] === 'object' && __args[0] != null) && typeof __args[1] === 'function') {
-      j_bugCRUDService["saveBug(org.sub.rest.entity.Bug,io.vertx.core.Handler)"](bug != null ? new Bug(new JsonObject(Java.asJSONCompatible(bug))) : null, function(ar) {
+      j_bugCRUDService["saveBug(org.sub.bug.entity.Bug,io.vertx.core.Handler)"](bug != null ? new Bug(new JsonObject(Java.asJSONCompatible(bug))) : null, function(ar) {
       if (ar.succeeded()) {
         resultHandler(null, null);
       } else {
@@ -93,7 +93,7 @@ var BugCRUDService = function(j_val) {
   this._jdel = j_bugCRUDService;
 };
 
-BugCRUDService._jclass = utils.getJavaClass("org.sub.rest.BugCRUDService");
+BugCRUDService._jclass = utils.getJavaClass("org.sub.bug.BugCRUDService");
 BugCRUDService._jtype = {
   accept: function(obj) {
     return BugCRUDService._jclass.isInstance(obj._jdel);

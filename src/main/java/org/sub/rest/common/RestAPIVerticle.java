@@ -20,9 +20,6 @@ import java.util.Set;
 import java.util.function.BiConsumer;
 import java.util.function.Function;
 
-/**
- * Created by z001h2s on 4/11/17.
- */
 public abstract class RestAPIVerticle extends BaseMicroserviceVerticle {
 
     /**

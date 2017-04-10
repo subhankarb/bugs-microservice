@@ -1,14 +1,15 @@
-package org.sub.rest;
+package org.sub.bug;
 
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.Future;
 
 import io.vertx.serviceproxy.ProxyHelper;
-import org.sub.rest.api.BugServiceAPIVerticle;
+import org.sub.bug.api.BugCRUDServiceImpl;
+import org.sub.bug.api.BugServiceAPIVerticle;
 import org.sub.rest.common.BaseMicroserviceVerticle;
 
-import static org.sub.rest.BugCRUDService.SERVICE_ADDRESS;
-import static org.sub.rest.BugCRUDService.SERVICE_NAME;
+import static org.sub.bug.BugCRUDService.SERVICE_ADDRESS;
+import static org.sub.bug.BugCRUDService.SERVICE_NAME;
 
 public class BugVerticle extends BaseMicroserviceVerticle {
 

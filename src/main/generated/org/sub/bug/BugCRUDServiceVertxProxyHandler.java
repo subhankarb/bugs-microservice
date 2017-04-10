@@ -14,9 +14,9 @@
 * under the License.
 */
 
-package org.sub.rest;
+package org.sub.bug;
 
-import org.sub.rest.BugCRUDService;
+import org.sub.bug.BugCRUDService;
 import io.vertx.core.Vertx;
 import io.vertx.core.Handler;
 import io.vertx.core.AsyncResult;
@@ -39,8 +39,8 @@ import io.vertx.serviceproxy.ProxyHelper;
 import io.vertx.serviceproxy.ProxyHandler;
 import io.vertx.serviceproxy.ServiceException;
 import io.vertx.serviceproxy.ServiceExceptionMessageCodec;
-import org.sub.rest.entity.Bug;
 import io.vertx.core.AsyncResult;
+import org.sub.bug.entity.Bug;
 import io.vertx.core.Handler;
 
 /*
@@ -121,7 +121,7 @@ public class BugCRUDServiceVertxProxyHandler extends ProxyHandler {
       accessed();
       switch (action) {
         case "saveBug": {
-          service.saveBug(json.getJsonObject("bug") == null ? null : new org.sub.rest.entity.Bug(json.getJsonObject("bug")), createHandler(msg));
+          service.saveBug(json.getJsonObject("bug") == null ? null : new org.sub.bug.entity.Bug(json.getJsonObject("bug")), createHandler(msg));
           break;
         }
         case "retrieveBug": {

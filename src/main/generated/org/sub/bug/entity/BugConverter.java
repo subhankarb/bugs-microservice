@@ -14,15 +14,15 @@
  * under the License.
  */
 
-package org.sub.rest.entity;
+package org.sub.bug.entity;
 
 import io.vertx.core.json.JsonObject;
 import io.vertx.core.json.JsonArray;
 
 /**
- * Converter for {@link org.sub.rest.entity.Bug}.
+ * Converter for {@link org.sub.bug.entity.Bug}.
  *
- * NOTE: This class has been automatically generated from the {@link org.sub.rest.entity.Bug} original class using Vert.x codegen.
+ * NOTE: This class has been automatically generated from the {@link org.sub.bug.entity.Bug} original class using Vert.x codegen.
  */
 public class BugConverter {
 
@@ -37,7 +37,7 @@ public class BugConverter {
       obj.setBugDescription((String)json.getValue("bugDescription"));
     }
     if (json.getValue("bugDeveloper") instanceof JsonObject) {
-      obj.setBugDeveloper(new org.sub.rest.entity.BugDeveloper((JsonObject)json.getValue("bugDeveloper")));
+      obj.setBugDeveloper(new org.sub.bug.entity.BugDeveloper((JsonObject)json.getValue("bugDeveloper")));
     }
     if (json.getValue("bugId") instanceof String) {
       obj.setBugId((String)json.getValue("bugId"));
@@ -52,10 +52,10 @@ public class BugConverter {
       obj.setModuleName((String)json.getValue("moduleName"));
     }
     if (json.getValue("problemLogs") instanceof JsonArray) {
-      java.util.ArrayList<org.sub.rest.entity.BugProblemLog> list = new java.util.ArrayList<>();
+      java.util.ArrayList<org.sub.bug.entity.BugProblemLog> list = new java.util.ArrayList<>();
       json.getJsonArray("problemLogs").forEach( item -> {
         if (item instanceof JsonObject)
-          list.add(new org.sub.rest.entity.BugProblemLog((JsonObject)item));
+          list.add(new org.sub.bug.entity.BugProblemLog((JsonObject)item));
       });
       obj.setProblemLogs(list);
     }

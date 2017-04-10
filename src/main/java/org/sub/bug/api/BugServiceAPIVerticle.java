@@ -1,4 +1,4 @@
-package org.sub.rest.api;
+package org.sub.bug.api;
 
 
 import io.vertx.core.Future;
@@ -6,9 +6,9 @@ import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
 import io.vertx.ext.web.handler.BodyHandler;
-import org.sub.rest.BugCRUDService;
+import org.sub.bug.BugCRUDService;
 import org.sub.rest.common.RestAPIVerticle;
-import org.sub.rest.entity.Bug;
+import org.sub.bug.entity.Bug;
 
 public class BugServiceAPIVerticle extends RestAPIVerticle {
 

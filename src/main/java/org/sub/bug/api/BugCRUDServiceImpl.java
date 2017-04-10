@@ -1,4 +1,4 @@
-package org.sub.rest;
+package org.sub.bug.api;
 
 import io.vertx.core.AsyncResult;
 import io.vertx.core.Future;
@@ -6,7 +6,8 @@ import io.vertx.core.Handler;
 import io.vertx.core.Vertx;
 import io.vertx.core.json.JsonObject;
 import io.vertx.ext.mongo.MongoClient;
-import org.sub.rest.entity.Bug;
+import org.sub.bug.BugCRUDService;
+import org.sub.bug.entity.Bug;
 
 
 public class BugCRUDServiceImpl implements BugCRUDService {

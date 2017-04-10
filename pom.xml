@@ -11,7 +11,7 @@
     <properties>
         <vertx.version>3.4.1</vertx.version>
         <log4j.version>2.8</log4j.version>
-        <main.verticle>org.sub.rest.BugVerticle</main.verticle>
+        <main.verticle>org.sub.bug.BugVerticle</main.verticle>
     </properties>
 
     <dependencyManagement>
